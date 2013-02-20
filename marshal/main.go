@@ -6,23 +6,23 @@ import (
 )
 
 type Category struct {
-	Id int `json:"id"`
+	Id   int    `json:"id"`
 	Name string `json:"name"`
 }
 
 type Book struct {
-	Id int `json:"id"`
-	Name string `json:"name"`
+	Id         int        `json:"id"`
+	Name       string     `json:"name"`
 	Categories []Category `json:"categories"`
 }
 
 func main() {
-	book := Book {
-		Id: 1,
+	book := Book{
+		Id:   1,
 		Name: "プログラミング言語Goフレーズブック",
-		Categories: []Category {
-			{ Id: 3, Name: "プログラミング" },
-			{ Id: 4, Name: "技術" },
+		Categories: []Category{
+			{Id: 3, Name: "プログラミング"},
+			{Id: 4, Name: "技術"},
 		},
 	}
 

@@ -15,14 +15,15 @@ const text = `
 	]
 }
 `
+
 type Category struct {
-	Id int `json:"id"`
+	Id   int    `json:"id"`
 	Name string `json:"name"`
 }
 
 type Book struct {
-	Id int `json:"id"`
-	Name string `json:"name"`
+	Id         int        `json:"id"`
+	Name       string     `json:"name"`
 	Categories []Category `json:"categories"`
 }
 
